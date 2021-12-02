@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string method</title>
+</head>
+
+<body>
+    <script>
+        const string_value = "welcome to Durshikhya to attend the javascript class."
+        //to count the length of the string use length
+        document.write(`the length of a string is ${string_value.length}<br>`)
+        //to find the position of string in a string use indexOf
+        document.write(`the position of 'to' in string is ${string_value.indexOf('to')}<br>`)
+        //search
+        document.write(`the position of 'search' in the string is ${string_value.search('the')} <br>`)
+        //to find the position of last occurance of a repeated string use last indexOf
+        document.write(`${string_value.lastindexOf('to')} <br>`)
+        //to change string to uppercase use toUpperCase
+        document.write(`${string_value.toUpperCase()} <br>`)
+        //toLowerCase
+
+        // replace
+        document.write(`${string_value.replace('javascript', 'css')} <br>`)
+        //ReplaceAll methods replace all the string that are similar 
+
+        //replace using regular expression and insensitive(i)
+        document.write(`${string_value.replace(/durshikhya/ig, 'Academy')} <br>`)
+
+        //substring ->certain parts of a string 
+        //substring methods
+        //slice(start,end)
+        //substring(satrt,end)
+        //startr(start, length)
+
+        document.write(`${string_value.slice(0, 21)}..........<br>`)
+        document.write(`${string_value.substrig(5, 25)}....  <br>`)
+        document.write(`${string_value.subtr(5, 25)}....  <br>`)
+
+        //charAt()
+        //charCodeAt()
+
+        //concatenate->for this we use  +
+        const fullname = "Raju Gurung"
+        document.write('my name is' + full_name + '<br>')
+
+        const a = '15'
+        const b = '20'
+        const c = a + b
+        document.write(c)
+
+
+
+    </script>
+
+</body>
+
+</html>
